@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-const { MongoClient, ObjectId } = require('mongodb');
+const { MongoClient, ObjectId, } = require('mongodb');
 
 const connectionURL = 'mongodb://127.0.0.1:27017';
 const databaseName = 'task-manager';
@@ -8,7 +8,7 @@ const databaseName = 'task-manager';
 
 // console.log(id, id.getTimestamp());
 
-MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) => {
+MongoClient.connect(connectionURL, { useNewUrlParser: true, }, (error, client) => {
     if (error) {
         console.log('Unable to connect to database');
         return;
