@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const { MongoClient, ObjectId } = require('mongodb');
 
 const connectionURL = 'mongodb://127.0.0.1:27017';
@@ -13,6 +14,7 @@ MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) =>
         return;
     }
 
+    // eslint-disable-next-line no-unused-vars
     const db = client.db(databaseName);
 
     // ------------- CREATE --------------
